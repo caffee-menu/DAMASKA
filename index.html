@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو دامسكا - Damasca Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <header class="header">
+            <img src="imgs/logo.png" alt="Damasca Logo" class="logo">
+        </header>
+
+        <nav class="categories">
+            <div class="category-item active" onclick="showCategory('hot-drinks')">
+                <i class="fa-solid fa-martini-glass-citrus"></i>
+                <span>قسم الكوكتيلات</span>
+            </div>
+            <div class="category-item" onclick="showCategory('cold-drinks')">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span>المشروبات الساخنة</span>
+            </div>
+            <div class="category-item" onclick="showCategory('crepe-section')">
+                <i class="fa-solid fa-stroopwafel"></i>
+                <span>قسم<br> الكريب</span>
+            </div>
+            <div class="category-item" onclick="showCategory('mohito')">
+                <i class="fa-solid fa-wine-glass"></i>
+                <span>قسم <br>الموهيتو</span>
+            </div>
+            <div class="category-item" onclick="showCategory('wookah')">
+                <i class="fa-solid fa-smoking"></i>
+                <span>قسم<br> الأراكيل</span>
+            </div>
+        </nav>
+
+        <main class="menu-content">
+            
+            <div id="hot-drinks" class="menu-section active-section">
+                <div class="section-title">قسم الكوكتيل</div>
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أوريو ميلك شيك</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/oreo.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>فريز ميلك شيك</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/strubery.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>فانيلا ميلك شيك</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/vanil.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>لوتس ميلك شيك</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/lotos.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>بلوبيري ميلك شيك</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/bleubery.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موز وحليب</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                        <img src="imgs/milkbanana.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>كوكتيل فواكه</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                        <img src="imgs/fruitcocktail.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>امبراطور</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                        <img src="imgs/salad.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أفوكادو</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                        <img src="imgs/afocado.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>سلطة فواكه بالقشطة والعسل</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                        <img src="imgs/qshta.png" alt="كابيتشينو">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>سلطة فواكه نوتيلا</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                        <img src="imgs/saladnotila.png" alt="لاتيه">
+                    </div>
+                </div>
+            </div>
+
+            <div id="cold-drinks" class="menu-section">
+                <div class="section-title">المشروبات الساخنة</div>
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>هوت شوكلت</h3>
+                           <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/hotchoclate.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>فرابتشينو شوكلت</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/farpotchino.png" alt="أيس">
+                    </div>   
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موكا كراميل</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/kramil.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أمريكانو</h3>
+                            <span class="price">50 LT</span>
+                        </div>
+                         <img src="imgs/amrecano.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>قهوة</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/coffee.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>نسكافيه بالحليب</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                        <img src="imgs/milkniscafe.png" alt="أيس">
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>كابيتشينو</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                        <img src="imgs/capchino.png" alt="ميلك شيك">
+                    </div>
+                </div>
+            </div>
+
+            <div id="crepe-section" class="menu-section">
+                <div class="section-title">قسم الكريب</div>
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>فوتوشيني كريب</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                         <img src="imgs/fotoshini.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>لوتس كريب</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                         <img src="imgs/lotoscrepe.png" alt="أيس">
+                    </div>   
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أوريو كريب</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                         <img src="imgs/oreocrepe.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>تريبل كريب</h3>
+                            <span class="price">200 LT</span>
+                        </div>
+                         <img src="imgs/tripple.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>كريب بالفواكه</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                         <img src="imgs/fruitcrepe.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>بستاشيو كريب</h3>
+                            <span class="price">200 LT</span>
+                        </div>
+                        <img src="imgs/pistachiocrepe.png" alt="أيس">
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>وافل نوتيلا</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                        <img src="imgs/wafflechocola.png" alt="ميلك شيك">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>وافل فواكه</h3>
+                            <span class="price">120 LT</span>
+                        </div>
+                        <img src="imgs/friutwaffle.png" alt="ميلك شيك">
+                    </div>
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>وافل ايس كريم</h3>
+                            <span class="price">150 LT</span>
+                        </div>
+                        <img src="imgs/icewaffle.png" alt="ميلك شيك">
+                    </div>
+                </div>
+            </div>
+
+            <div id="mohito" class="menu-section">
+                <div class="section-title">الموهيتو</div>
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موهيتو ريدبول</h3>
+                           <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/redbull.jpg" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موهيتو فريز</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/mohitofreez.jpg" alt="أيس">
+                    </div>   
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موهيتو ليمون و نعناع</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/limon.jpg" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>موهيتو توت</h3>
+                            <span class="price">75 LT</span>
+                        </div>
+                         <img src="imgs/mohitotot.jpg" alt="أيس">
+                    </div>    
+                    
+                </div>
+            </div>
+
+            <div id="wookah" class="menu-section">
+                <div class="section-title">الأراكيل</div>
+                <div class="menu-list">
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة نخلة</h3>
+                           <span class="price">100 LT</span>
+                        </div>
+                         <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة فاخر</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                         <img src="imgs/hokaah.png" alt="أيس">
+                    </div>   
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة بولو</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة ليدي</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة لوف</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة علكة ونعناع</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة عنب</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    <div class="menu-card">
+                        <div class="card-info">
+                            <h3>أركيلة خلطة داماسكا</h3>
+                            <span class="price">100 LT</span>
+                        </div>
+                          <img src="imgs/hokaah.png" alt="أيس">
+                    </div>    
+                    
+                </div>
+            </div>
+            </main>
+
+        <footer class="footer">
+            <div class="cart-bar">
+                <div class="cart-info"> <span>للشكاوي والاستفسارات :</span></div>
+                <a class="checkout-btn" href="https://wa.me/+963954105781">Call Us</a>
+            </div>
+            <div class="cart-bar">
+                <div class="cart-info"> <span>تم الانشاء بواسطة :</span></div>
+                <a class="checkout-btn" href="https://wa.me/+963954105781">MAYAR</a>
+            </div>
+            
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

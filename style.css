@@ -1,0 +1,131 @@
+:root {
+    --primary-brown: #5d4037;
+    --bg-color: #fcf9f7;
+    --card-bg: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eee;
+    direction: rtl;
+}
+
+.menu-container {
+    max-width: 450px; /* ليظهر كشاشة موبايل */
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.logo { 
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--primary-brown);
+ }
+
+/* الأقسام - شريط التمرير */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    background: #fff;
+    padding: 10px;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.category-item {
+    min-width: 80px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #888;
+}
+
+.category-item.active {
+    background-color: var(--primary-brown);
+    color: #fff;
+}
+
+.category-item i { display: block; margin-bottom: 10px; font-size: 1.2rem; }
+
+/* إخفاء الأقسام غير النشطة */
+.menu-section {
+    display: none;
+    padding: 15px;
+}
+
+.active-section {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-right: 4px solid var(--primary-brown);
+    padding-right: 10px;
+}
+
+/* بطاقة واحدة في كل صف */
+.menu-card {
+    display: flex;
+    background: var(--card-bg);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-info { flex: 1; padding-left: 10px; }
+.card-info h3 { margin: 0 0 5px; font-size: 1rem; }
+.card-info p { margin: 0 0 10px; font-size: 0.8rem; color: #777; line-height: 1.4; }
+.price { color: var(--primary-brown); font-weight: bold; }
+
+.menu-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    padding: 15px;
+    background: #fff;
+}
+
+.cart-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    text-decoration: none;
+    background: var(--primary-brown);
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
